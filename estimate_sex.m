@@ -169,19 +169,19 @@ function h = user_interface_CSG(classifier, sample_IDs, CSGdata)
   savedata = uicontrol (h.f, "style", "pushbutton", "string", "save results",...
                         "Position", [350 20 100 50], "backgroundcolor", bg_color);
   % set callbacks
-  set (estimate, "callback", {@run_estimate, estimate, h, classifier, CSGdata});
-  set (savedata, "callback", {@run_savedata, savedata, h, classifier, CSGdata});
+  set (estimate, "callback", {@run_estimate_CSG, estimate, h, classifier, CSGdata});
+  set (savedata, "callback", {@run_savedata_CSG, savedata, h, classifier, CSGdata});
 endfunction
 
 % callback function for estimating sex according to user's selection
-function run_estimate(estimate, dummy1, dummy2, h, classifier, CSGdata)
+function run_estimate_CSG(estimate, dummy1, dummy2, h, classifier, CSGdata)
   % take current user selections and create indexing accordingly
-  [method, sample_idx, sample_ID, bone, side, skelement, DFs] = update_user_input(h);
+  [method, sample_idx, sample_ID, bone, side, skelement, DFs] = update_CSG_UI(h);
   % get sample from CSGdata
   sample_data = CSGdata(sample_idx,:);
   % for each DF keep the appropriate variables, normalize them and estimate sex
   % and posterior probability according to the selected method
-  [sample_sex, sample_pb] = do_the_real_work(DFs, method, skelement, classifier, sample_data);
+  [sample_sex, sample_pb] = predict_sex_CSG(DFs, method, skelement, classifier, sample_data);
   % create the results' strings for each selected DF and update the ui
   r_idx = 0;
   for c_idx = DFs
@@ -194,14 +194,14 @@ function run_estimate(estimate, dummy1, dummy2, h, classifier, CSGdata)
 endfunction
 
 % callback function for saving results according to user's selection
-function run_savedata(savedata, dummy1, dummy2, h, classifier, CSGdata)
+function run_savedata_CSG(savedata, dummy1, dummy2, h, classifier, CSGdata)
   % take current user selections and create indexing accordingly
-  [method, sample_idx, sample_ID, bone, side, skelement, DFs] = update_user_input(h);
+  [method, sample_idx, sample_ID, bone, side, skelement, DFs] = update_CSG_UI(h);
   % get sample from CSGdata
   sample_data = CSGdata(sample_idx,:);
   % for each DF keep the appropriate variables, normalize them and estimate sex
   % and posterior probability according to the selected method
-  [sample_sex, sample_pb] = do_the_real_work(DFs, method, skelement, classifier, sample_data);
+  [sample_sex, sample_pb] = predict_sex_CSG(DFs, method, skelement, classifier, sample_data);
   % create a header and a standard filename for the results' file
   results_header = {"Sample ID", "bone", "side", "method", "classifier",...
                     "predicted sex", "posterior probability"};
@@ -226,7 +226,7 @@ endfunction
 
 % for each selected DF keep the appropriate variables, normalize them and estimate sex
 % and posterior probability according to the selected method
-function [sample_sex, sample_pb] = do_the_real_work(DFs, method, skelement, classifier, sample_data)
+function [sample_sex, sample_pb] = predict_sex_CSG(DFs, method, skelement, classifier, sample_data)
   if length(DFs) > 0
     for i=1:length(DFs)
       % get index of classifier from description table
@@ -307,7 +307,7 @@ function [sample_sex, sample_pb] = do_the_real_work(DFs, method, skelement, clas
 endfunction
 
 % take current user selections and create indexing accordingly
-function [method, sample_idx, sample_ID, bone, side, skelement, DFs] = update_user_input(h)
+function [method, sample_idx, sample_ID, bone, side, skelement, DFs] = update_CSG_UI(h)
   % get classification method
   method = get(get(h.class_method, "selectedobject"), "tag");
   % get selected sample

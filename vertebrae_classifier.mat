@@ -1,0 +1,573 @@
+# Created by Octave 5.1.0, Tue Jul 14 15:17:29 2020 EEST <promitheas@Mobile-Workstation>
+# name: classifiers
+# type: struct
+# ndims: 2
+ 1 6
+# length: 1
+# name: LDA
+# type: cell
+# rows: 1
+# columns: 6
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 2
+# name: measurements
+# type: cell
+# rows: 1
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 31
+posterior Vertebral Body Height
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 24
+maximum Vertebral Length
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 27
+maximum Transverse Distance
+
+
+
+
+
+# name: weights
+# type: matrix
+# rows: 1
+# columns: 4
+ -23.600000000000001 0.35399999999999998 0.14599999999999999 0.113
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 2
+# name: measurements
+# type: cell
+# rows: 1
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 21
+lower End Plate Width
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 24
+maximum Vertebral Length
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 27
+maximum Transverse Distance
+
+
+
+
+
+# name: weights
+# type: matrix
+# rows: 1
+# columns: 4
+ -19.780000000000001 0.083000000000000004 0.069000000000000006 0.155
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 2
+# name: measurements
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 31
+posterior Vertebral Body Height
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 24
+maximum Vertebral Length
+
+
+
+
+
+# name: weights
+# type: matrix
+# rows: 1
+# columns: 3
+ -20.396999999999998 0.30499999999999999 0.17299999999999999
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 2
+# name: measurements
+# type: cell
+# rows: 1
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 21
+lower End Plate Depth
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 21
+lower End Plate Width
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 24
+maximum Vertebral Length
+
+
+
+
+
+# name: weights
+# type: matrix
+# rows: 1
+# columns: 4
+ -15.638 0.104 0.091999999999999998 0.10100000000000001
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 2
+# name: measurements
+# type: cell
+# rows: 1
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 21
+upper End Plate Width
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 31
+posterior Vertebral Body Height
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 24
+maximum Vertebral Length
+
+
+
+
+
+# name: weights
+# type: matrix
+# rows: 1
+# columns: 4
+ -20.637 0.16 0.28100000000000003 0.080000000000000002
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 2
+# name: measurements
+# type: cell
+# rows: 1
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 21
+upper End Plate Width
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 24
+maximum Vertebral Length
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 27
+maximum Transverse Distance
+
+
+
+
+
+# name: weights
+# type: matrix
+# rows: 1
+# columns: 4
+ -16.117000000000001 0.13500000000000001 0.056000000000000001 0.068000000000000005
+
+
+
+
+
+
+
+
+
+# name: description
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 4
+# name: datatype
+# type: string
+# elements: 1
+# length: 9
+Vertebrae
+
+
+# name: LDA
+# type: cell
+# rows: 6
+# columns: 2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 8
+Greek T1
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 9
+Danish T1
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 9
+Greek T12
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 10
+Danish T12
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 8
+Greek L1
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 9
+Danish L1
+
+
+
+# name: <cell-element>
+# type: scalar
+1
+
+
+# name: <cell-element>
+# type: scalar
+2
+
+
+# name: <cell-element>
+# type: scalar
+3
+
+
+# name: <cell-element>
+# type: scalar
+4
+
+
+# name: <cell-element>
+# type: scalar
+5
+
+
+# name: <cell-element>
+# type: scalar
+6
+
+
+
+
+
+# name: vertebra
+# type: cell
+# rows: 1
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+T1
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 3
+T12
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+L1
+
+
+
+
+
+# name: population
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+Greek
+
+
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+Danish
+
+
+
+
+
+
+
+# name: post_proba
+# type: struct
+# ndims: 2
+ 1 6
+# length: 1
+# name: LDA
+# type: cell
+# rows: 1
+# columns: 6
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 3
+# name: sectioning_point
+# type: scalar
+-0.20100000000000001
+
+
+# name: centroid_females
+# type: scalar
+-1.458
+
+
+# name: centroid_males
+# type: scalar
+1.056
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 3
+# name: sectioning_point
+# type: scalar
+-0.050000000000000003
+
+
+# name: centroid_females
+# type: scalar
+-1.137
+
+
+# name: centroid_males
+# type: scalar
+1.038
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 3
+# name: sectioning_point
+# type: scalar
+-0.084000000000000005
+
+
+# name: centroid_females
+# type: scalar
+-0.96499999999999997
+
+
+# name: centroid_males
+# type: scalar
+0.79800000000000004
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 3
+# name: sectioning_point
+# type: scalar
+-0.0070000000000000001
+
+
+# name: centroid_females
+# type: scalar
+-0.68200000000000005
+
+
+# name: centroid_males
+# type: scalar
+0.66900000000000004
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 3
+# name: sectioning_point
+# type: scalar
+-0.129
+
+
+# name: centroid_females
+# type: scalar
+-1.0760000000000001
+
+
+# name: centroid_males
+# type: scalar
+0.81799999999999995
+
+
+
+
+
+# name: <cell-element>
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 3
+# name: sectioning_point
+# type: scalar
+-0.049000000000000002
+
+
+# name: centroid_females
+# type: scalar
+-0.63500000000000001
+
+
+# name: centroid_males
+# type: scalar
+0.73199999999999998
+
+
+
+
+
+
+
+
+

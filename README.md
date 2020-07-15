@@ -1,6 +1,13 @@
 # skeletal-sex-estimation
 A GNU Octave function for skeletal sex estimation
 
-The function estimate_sex comprises a self-intuitive graphical user interface for estimating sex from the femur, tibia, and humerus. The available “long_bone_classifier.mat” contains all relevant classification parameters based on modern Greek reference skeletal collection known as the Athens Collection. A testing dataset “sampledata.csv” containing all relevant measurements from three long bones of one male and one female individual from the Athens Collection is also bundled with the function for demonstrating purposes.
+The function estimate_sex provides a graphical user interface for estimating sex from various sleletal elements according to the selected classifier saved in the respective .mat files. The required classifier file can be parsed as an input argument to the function or it can be selected through the open file dialog when the function is called withough any input arguments.
+For further details regarding its usage type:
 
-Use the long-bone-diaphyseal-CSG-Toolkit to extract the necessary measurements for sex estimation based on the aforementioned bones. You may also utilize the inspect_CSG function available in the latest version of the CSG_Toolkit to aggregate all extracted skeletal properties in a csv file compliant with the format required by the estimate_sex function.
+		help estimate_sex
+
+Currently, the function supports two types of classifiers.
+
+1) Use "long_bone_classifier.mat" for estimating sex from CSG data of the femur, tibia, and humerus bones. The CSG data can be automatically extracted from virtual 3D bone models with the long-bone-diaphyseal-CSG-Toolkit, which also saves the required data to the appropriate format.
+
+2) Use "vertebrae_classifier.mat" for estimating sex based on linear measurements from the T1, T12 and L1 vertebrae.
